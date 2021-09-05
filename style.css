@@ -3,4 +3,13 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Boogaloo', cursive;
+  color: #04effe;
+}
+.container{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(img/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
