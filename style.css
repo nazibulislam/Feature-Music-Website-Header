@@ -5,6 +5,7 @@
   font-family: 'Boogaloo', cursive;
   color: #04effe;
 }
+/* Sets height, width, bg-image, relative position */
 .container{
   min-height: 100vh;
   width: 100%;
@@ -13,16 +14,19 @@
   background-position: center;
   position: relative;
 }
+/* navbar width d-flex */
 .navbar{
   width: 88%;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
+/* logo width padding */
 .logo{
   width: 3em;
   padding: 20px 0;
 }
+/* navbar styling */
 .navbar ul li{
   list-style: none;
   display: inline-block;
@@ -33,11 +37,13 @@
   font-size: 1.3em;
 }
 
+/* content styling width */
 .header-content{
   width: 100%;
   position: absolute;
   top: 30%;
 }
+/* left side of the contant */
 .left-side{
   margin-left: 6%;
 }
@@ -54,6 +60,7 @@
   margin-right: 8%;
   margin-top: 120px;
 }
+/* right side of the contant with play/pause icon */
 .right-side p{
   font-size: 24px;
   margin-right: 25px;
@@ -62,3 +69,5 @@
   width: 50px;
   cursor: pointer;
 }
+
+/* end of css */

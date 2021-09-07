@@ -9,12 +9,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  <title>Playable Music Website Header</title>
+  <title>Feature Music Website Header</title>
 </head>
 <body>
   <div class="container">
+    <!-- navbar -->
     <div class="navbar">
+      <!-- navbar logo -->
       <img src="img/logo.png" alt="" class="logo">
+      <!-- navbar menu -->
       <ul>
         <li><a href="">HOME</a></li>
         <li><a href="">ABOUT</a></li>
@@ -23,16 +26,40 @@
         <li><a href="">CONTACT</a></li>
       </ul>
     </div>
+    <!-- Contents for feature header -->
     <div class="header-content">
+      <!-- Header texts left-side -->
       <div class="left-side">
         <h1>Most Popular<br>Music<br>of the Day</h1>
       </div>
+      <!-- Header icon to play and pause music -->
       <div class="right-side">
         <p>Play the music -></p>
         <img src="img/play.png" id="icon" draggable="false">
       </div>
     </div>
   </div>
-  <audio src="audio/raising-me-higher.mp3"></audio>
+  <!-- Feature music track -->
+  <audio id="musicTrack" preload="none">
+    <source src="audio/raising-me-higher.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Javascript -->
+  <script>
+    // Toggle play/pause icon
+    var musicTrack = document.getElementById("musicTrack");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+      if(musicTrack.paused){
+        musicTrack.play();
+        icon.src="img/pause.png";
+      }
+      else{
+        musicTrack.pause();
+        icon.src="img/play.png";
+      }
+    }
+  </script>
 </body>
 </html>
